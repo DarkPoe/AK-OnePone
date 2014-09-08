@@ -17,6 +17,7 @@ obj-$(CONFIG_CPU_FREQ_GOV_SMARTMAX)     += cpufreq_smartmax_eps.o cpufreq_smartm
 obj-$(CONFIG_CPU_FREQ_GOV_INTELLIACTIVE)+= cpufreq_intelliactive.o
 obj-$(CONFIG_CPU_FREQ_GOV_DANCEDANCE)	+= cpufreq_dancedance.o
 obj-$(CONFIG_CPU_FREQ_GOV_DARKNESS)	+= cpufreq_darkness.o
+obj-$(CONFIG_CPU_FREQ_GOV_OPTIMAX)	+= cpufreq_optimax.o
 
 # CPUfreq cross-arch helpers
 obj-$(CONFIG_CPU_FREQ_TABLE)		+= freq_table.o
