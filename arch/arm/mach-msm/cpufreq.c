@@ -299,7 +299,11 @@ static int __cpuinit msm_cpufreq_init(struct cpufreq_policy *policy)
 		return ret;
 	pr_debug("cpufreq: cpu%d init at %d switching to %d\n",
 			policy->cpu, cur_freq, table[index].frequency);
+#ifdef CONFIG_MSM_CPU_FREQ_SET_MIN_MAX
+	policy->cur = CONFIG_MSM_CPU_FREQ_MAX;
+#else
 	policy->cur = table[index].frequency;
+#endif
 	cpufreq_frequency_table_get_attr(table, policy->cpu);
 
 	policy->cpuinfo.transition_latency =
