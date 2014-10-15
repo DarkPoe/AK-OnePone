@@ -16,8 +16,8 @@ DTBIMAGE="boot.img-dtb"
 DEFCONFIG="ak_bacon_defconfig"
 
 # Kernel Details
-BASE_AK_VER="sensei"
-VER=".R65"
+BASE_AK_VER="sensei-CM11S"
+VER=".R66"
 AK_VER="$BASE_AK_VER$VER"
 
 # Vars
