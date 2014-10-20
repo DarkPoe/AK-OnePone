@@ -17,7 +17,7 @@ DEFCONFIG="ak_bacon_defconfig"
 
 # Kernel Details
 BASE_AK_VER="AK"
-VER=".066.GOLD.OPO.CM11S"
+VER=".068.GOLD.OPO.CM11S"
 AK_VER="$BASE_AK_VER$VER"
 
 # Vars
