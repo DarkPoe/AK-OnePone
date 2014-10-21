@@ -17,7 +17,7 @@ DEFCONFIG="ak_bacon_defconfig"
 
 # Kernel Details
 BASE_AK_VER="sensei-CM11"
-VER=".R66.1"
+VER=".R68"
 AK_VER="$BASE_AK_VER$VER"
 
 # Vars
