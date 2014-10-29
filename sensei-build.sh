@@ -17,7 +17,7 @@ DEFCONFIG="ak_bacon_defconfig"
 
 # Kernel Details
 BASE_AK_VER="sensei"
-VER="R71.11-CM11"
+VER="R72-CM11"
 AK_VER="$BASE_AK_VER$VER"
 
 # Vars
@@ -39,8 +39,13 @@ ZIMAGE_DIR="${HOME}/android/AK-OnePone/arch/arm/boot"
 # Functions
 function clean_all {
 		rm -rf $MODULES_DIR/*
-		rm -rf $REPACK_DIR/$KERNEL
-		rm -rf $PATCH_DIR/$DTBIMAGE
+		cd $REPACK_DIR
+		rm -rf $KERNEL
+		rm -rf $DTBIMAGE
+		git reset --hard > /dev/null 2>&1
+		git clean -f -d > /dev/null 2>&1
+		cd $KERNEL_DIR
+		echo
 		make clean && make mrproper
 }
 
